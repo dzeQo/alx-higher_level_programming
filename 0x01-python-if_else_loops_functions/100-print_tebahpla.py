@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-a = 122
-while a >= 97:
-    char1 = chr(a)
-    a -= 1
-    char = chr(a - 32)
-    print('{}{}'.format(char1, char), end="")
-    a -= 1
+for i in range(122, 96, -1):
+    fchar = chr(i) if i % 2 == 0 else chr(i - 32)
+    print("{}".format(fchar), end="")
